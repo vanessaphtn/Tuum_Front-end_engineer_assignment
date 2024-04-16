@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@100..900&display=swap');
+
+*{
+    background-color: rgb(175, 207, 215);
+    font-family: "Noto Serif Georgian", serif;
+    box-sizing: border-box;
+}
+
+.contact{
+    max-width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin: auto 5% 4% 5%;
+} 
+
+.contact-col{
+    flex-basis:content;
+    margin-right: 50px;
+}
+
+.contact-col h1{
+    font-size: 55px;
+    font-weight:300;
+    background-color: white;
+    margin: auto 0px;
+}
+.contact-col img{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    margin: auto 0px;
+
+}
+
+.contact-col h3{
+    font-size: 40px;
+    font-weight:250;
+    margin-bottom: auto;
+    margin-left: 60px;
+}
+
+.mail{
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 60px;
+    
+}
+
+.contact form {
+    background-color: white;
+    max-width: auto;
+    margin: 3% 4% 3% 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 30px 30px;
+    border-radius: 40px;
+
+}
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    background-color: white;
+    margin: auto 50px;
+  }
+
+.contact form input {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: white;
+    border-color: gainsboro;
+    margin: auto 10px;
+    max-width: 100%;
+    font-size: 18px;
+    width: 300px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: solid;
+    border-width: thin;
+
+}
+
+
+
+.contact form label, .contact form a{
+    background-color: white;
+    font-weight: 300;
+}
+
+.contact form input[type="checkbox"]{
+    width:auto;
+    height:auto;
+
+}
+
+.contact form textarea{
+    display:flex;
+    width: 100%;
+    padding: 15px;
+    outline: 0;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    resize: none;
+    border-radius: 4px;
+    background-color: white;
+    border-color: gainsboro;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.Submit-button{
+    background-color: rgb(175, 207, 215);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+
+}
+
+.Submit-button:hover{
+    background-color: gainsboro;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .contact {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-col {
+      margin-right: 0;
+    }
+  
+    .contact-col h1 {
+      font-size: 40px;
+    }
+
+    .contact-col h3 {
+        font-size: 20px;
+      }
+  
+    .contact form input,
+    .contact form select,
+    .contact form textarea {
+      width: 100%;
+    }
+  }
